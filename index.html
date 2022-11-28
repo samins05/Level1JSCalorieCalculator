@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<body onload="initialize();">
+
+<h1 class="title">Calorie Calculator</h1>
+<div class="grid">
+<div class ="app">
+<div id="appetizer">Appetizer: 0 calories</div>
+<span id="appPro">Protein: 0g</span>
+<button id="AaP" onclick="addProtein('A');">+</button>
+<button id="AsP" onclick="subProtein('A');">-</button>
+<br>
+
+<span id="appFat">Fats:0g</span>
+<button id="AaF" onclick ="addFat('A');">+</button>
+<button id="AsF" onclick ="subFat('A');">-</button>
+<br>
+
+<span id="appCar">Carbs: 0g</span>
+<button id="AaC" onclick ="addCarbs('A');">+</button>
+<button id="AsC" onclick ="subCarbs('A');">-</button>
+<br>
+<button id="appReset" onclick="appReset();">Reset</button>
+</div>
+
+<div class="ent">
+<div id="entree">Entree: 0 calories</div>
+<span id="entPro">Protein:0g</span>
+<button id="EaP" onclick="addProtein('E');">+</button>
+<button id="EsP" onclick="subProtein('E');">-</button>
+<br>
+
+<span id="entFat">Fats:0g</span>
+<button id="EaF" onclick ="addFat('E');">+</button>
+<button id="EsF" onclick = "subFat('E');">-</button>
+<br>
+
+<span id="entCar">Carbs: 0g</span>
+<button id="EaC" onclick = "addCarbs('E');">+</button>
+<button id="EsC" onclick = "subCarbs('E');">-</button>
+<br>
+
+<button id="entReset" onclick="entReset();">Reset</button>
+</div>
+
+
+
+<div class="des">
+<div id="dessert">Dessert: 0 calories</div>
+<span id="desPro">Protein: 0g</span>
+<button id="DaP" onclick="addProtein('D');">+</button>
+<button id="DsP" onclick="subProtein('D');">-</button>
+<br>
+
+<span id="desFat">Fats: 0g</span>
+<button id="DaF" onclick ="addFat('D');">+</button>
+<button id="DsF" onclick ="subFat('D');">-</button>
+<br>
+
+<span id="desCar">Carbs: 0g</span>
+<button id="DaC" onclick ="addCarbs('D');">+</button>
+<button id="DsC" onclick ="subCarbs('D');">-</button>
+<br>
+<button id="desReset" onclick="desReset();">Reset</button>
+</div>
+
+</div>
+<div id="total">Total: 0 Calories</div>
+    <button id="totalReset" onclick="totalReset();">Reset</button>
+
+    
+</body>
+</html>
